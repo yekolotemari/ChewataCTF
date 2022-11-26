@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  blackbox-ctf:
+    container_name: blackbox
+    image: php:8.0-apache
+    volumes:
+      - ./app:/var/www/html/
+    ports:
+      - 82:80

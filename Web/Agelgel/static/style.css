@@ -1,0 +1,13 @@
+body,html{
+  
+  background-image: url("/static/bg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+
+  background-color: #cccccc;
+}
+.form-class {
+   filter: blur(0); 
+}

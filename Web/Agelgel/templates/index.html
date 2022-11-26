@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  <title>Agelgel</title>
+  <style>
+    .bodyss img {
+      margin: left;
+      opacity: 1.2px;
+      filter: blur(1px);
+    }
+    .bubbles {
+
+        display: inline-block;
+        font-family: arial;
+        position: relative;
+    }
+    h1 {
+    font-size: 3.2rem;
+    }
+
+    .bubbles h1 {
+      color: #fff;
+      text-shadow:
+          0 0 4px #fff,
+          0 0 8px #fff,
+          0 0 10px #fff,
+          0 0 42px #ffa,
+          0 0 42px #ffe,
+          0 0 42px #0fe,
+          0 0 10px #0fa,
+          0 0 10px #0fa;
+
+      background-color: #131ff3;
+      font-family: 'Bubblegum Sans';
+      font-size: 66px;
+      background: -webkit-linear-gradient(#f8ecb8, #ff42c1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      margin: 0em 0 0;
+      font-family: 'Luckiest Guy', cursive;
+      color: yellowgreen;
+      z-index: 2;
+    }
+
+  </style>
+</head>
+    <!-- <center><h2>አገልግል</h2></center> -->
+<body >
+  <center>
+  <div class="center-outer">
+    <div class="center-inner">
+
+      <div class="bubbles">
+        <center><h1>አገልግል</h1></center>
+      </div>
+  </center>
+  </div>
+  </div>
+  <div  class='bodyss w3-display-topleft'>
+    <img style="width:88px;height:90px;opacity: 0.5;" src="static/hint.jpg" class="w3-circle" alt="Avatar">
+    
+  </div>
+  
+  <div class="form-class w3-display-middle w3-monospace ">
+    <h2 style="color:white; font-weight:23px;">What's on Your mind?</h2>
+    <form method="get" action="/">
+      <input style="height:32px; width:400px;" placeholder='search' name='cmd' autofocus >
+      <input type="submit">
+    </form>
+    <div style="color:white; bg-color:black;" class="w3-black w3-card-2	w3-container w3-card w3-monospace ">
+      {% if name  %}
+      <h4>Result, {{name}}</h4>
+      {%endif%}
+      
+      {% if sus  %}
+      <h3>Result, Suspicious</h3>
+      {%endif%}
+      
+    </div>
+    
+  </div>
+  <h3 class="w3-monospace w3-display-bottommiddle" style="color:red;">Hint: flag located at "/bin/Flag.txt"</h3>
+</body>
+</html>
