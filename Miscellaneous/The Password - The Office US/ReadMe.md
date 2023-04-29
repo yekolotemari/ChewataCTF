@@ -3,7 +3,7 @@
 Your one of the office coworkers sitting right there when the 
    *** POWER WENT OUT ***
       
-![a](https://media2.giphy.com/media/8ScyBVeYSNtG1vpG5K/giphy.gif?cid=82a1493byfs9l6srpsx65ctyf0opbjzc8mi5ylfnssi8s68b&rid=giphy.gif&ct=v)
+![a](https://giphy.com/clips/theoffice-the-office-peacock-tv-show-8ScyBVeYSNtG1vpG5K)
 
  flag{admin123}
  50 point 
